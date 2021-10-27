@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Registeration</title>
+  <link rel="stylesheet" href="1_login.css">
+</head>
+<style>
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 5px;
+  }
+
+</style>
+<body>
+  <div class="hero">
+    <div class="navbar">
+      <table width="100%" style="text-align: center;">
+        <tr>
+          <td> <img src="Logo.jpg" class="logo"></td>
+          <td>
+            <h1>Rental Services</h1>
+            <a href="1_login.html" target="_parent">
+              <p align="right">
+                <input type="submit" class="button" name="" value="Login">
+            </a>
+            <a href="2_Home.html" target="_parent"> <input type="submit" class="button" name="" value="Home"></a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <center>
+      <form action="" method="POST">
+        <table width="40%" style="color:cyan;">
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="first_name" maxlenght="20" placeholder="Enter First Name" required /></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="last_name" maxlenght="20" placeholder="Enter Last Name" required /></td>
+          </tr>
+          <tr>
+            <td>Enter Email Id</td>
+            <td><input type="email" name="input8" required /></td>
+          </tr>
+          <tr>
+            <td>PinCode</td>
+            <td><input type="text" id="pin" name="pin" maxlength="5" size="5"></td>
+          </tr>
+          <tr>
+            <td>Any service used before</td>
+            <td><input type="radio" name="subject" value="Yes" required> Yes
+              <input type="radio" name="subject" value="No" required> No
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cars">Choose your desired service:</label></td>
+            <td><select name="Services" id="Services" required>
+                <option value="Activa">Activa</option>
+                <option value="Bike">Bike</option>
+                <option value="car">Car</option>
+                <option value="Car with driver">Car with driver</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="agree" name="agree" value="agree" required>
+              <label for="agree"> I agree</label>
+              <input type="checkbox" id="disagree" name="disagree" value="disagree">
+              <label for="disagree"> I disagree</label>
+            </td>
+            <td>
+              <script type="text/javascript">
+                function sucess() {
+                  alert("The Form was submitted successfully")
+                }
+              </script><input type="submit" onclick="sucess()" class="button" name="Submit" />
+             <input type="reset" class="button" value="Reset"></td>
+          </tr>
+        </table>
+      </form>
+      <footer class="section footer">
+        <div class="div-footer">
+          <p>copyright &#169; 2020-2021
+
+            <a href="details.html"><button name="subject" type="submit" class="button"  value="HTML">Employee Details</button></a>
+
+        </div>
+      </footer>
+</body>
+
+</html>
